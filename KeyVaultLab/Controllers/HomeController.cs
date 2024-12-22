@@ -22,7 +22,7 @@ namespace KeyVaultLab.Controllers
             ViewBag.WebConfigDb = $"DB: {db}";
             ViewBag.WebConfigSecret = $"Secret: {sec}";
 
-            // TODO
+            // TODO: 2) Connect from Web.config with config builder
             return View();
         }
 
@@ -32,7 +32,7 @@ namespace KeyVaultLab.Controllers
             try
             {
                 string secretValue = ConfigurationManager.AppSettings["SecretFromKeyVault"];
-                // TODO
+                // TODO: 1) Connet Azure Key Vault Directly
                 ViewBag.Secret = $"Secret from: {secretValue}";
             }
             catch (Exception exp)
@@ -53,7 +53,8 @@ namespace KeyVaultLab.Controllers
             // Connect Azure Blob with Managed Identity
             try
             {
-                // TODO
+                // TODO: 3-2) Client Credential with Azure PaaS
+                // Use DefaultAzureCredential to authenticate with managed identity
             }
             catch (Exception exp)
             {
@@ -65,10 +66,9 @@ namespace KeyVaultLab.Controllers
             // Connect Azure Blob with Connection String
             try
             {
-                // Azure Blob Storage code
-                string blobConnectionString = ConfigurationManager.AppSettings["ConnSg"];
+                // TODO: 3-1) Client Credential with Azure PaaS
+                // Connect Azure Blob with Connection String
 
-                // TODO
             }
             catch (Exception exp)
             {
