@@ -1,0 +1,26 @@
+[
+  {
+    "name": "John Doe",
+    "gender": "Male",
+    "age": 30,
+    "email": "john.doe@example.com"
+  },
+  {
+    "name": "Jane Smith",
+    "gender": "Female",
+    "age": 25,
+    "email": "jane.smith@example.com"
+  },
+  {
+    "name": "Alice Johnson",
+    "gender": "Female",
+    "age": 28,
+    "email": "alice.johnson@example.com"
+  },
+  {
+    "name": "Bob Brown",
+    "gender": "Male",
+    "age": 35,
+    "email": "bob.brown@example.com"
+  }
+]
